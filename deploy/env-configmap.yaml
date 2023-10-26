@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: env-configmap
+data:
+  # Configuration values for the frontend web application
+  URL: http://localhost:8100
+  
+  # Configuration values for the backend API application
+  AWS_PROFILE: "default"
+  AWS_REGION: "us-east-1"
+  AWS_BUCKET: "mino-s3-acity-prj3"
+  POSTGRES_HOST: "mino-database.ccd6k7qyrs6w.us-east-1.rds.amazonaws.com"
+  POSTGRES_DB: "mino_database"
+  JWT_SECRET: "testing"
